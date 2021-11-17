@@ -1,0 +1,46 @@
+.chat-container {
+    height: 60vh;
+    padding: 0px;
+    width: 100%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+}
+
+.something {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 5vh;
+    font-size: 2vh;
+    font-weight: 700;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    background: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.test {
+    width: 20vw;
+}
+
+.usericon {
+    width: 4vh;
+    height: 4vh;
+}
+
+.hideicon{
+    cursor: pointer;
+    width: 4vh;
+    height: 4vh;
+}
+
+.endchat{
+    cursor: pointer;
+    width: 4vh;
+    height: 4vh;
+}

@@ -1,0 +1,8 @@
+<div *ngIf="owner" class="content-message right-content">
+    <p [ngStyle]="{'background-color': colorBackRight, 'color': colorFontRight}">{{text!}}</p>
+    <img src="/assets/clienticon.png">
+</div>
+<div *ngIf="!owner" class="content-message left-content">
+    <img src="/assets/icon.png">
+    <p [ngStyle]="{'background-color': colorBackLeft, 'color': colorFontLeft}">{{text!}}</p>
+</div>

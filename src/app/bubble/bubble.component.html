@@ -1,0 +1,7 @@
+<div class="main-container">
+    <app-chatbot id="chatbot"></app-chatbot>
+    <div class="bubble open" cdkDrag [cdkDragFreeDragPosition]="elementPosition" cdkDragBoundary="body" id="bubble" (click)="open()" cdkDrag (cdkDragStarted)="DragStart($event)" (cdkDragEnded)="DragEnd($event)">
+      <img class="innerbubble" src="/assets/icon.png">
+    </div>
+</div>
+  

@@ -1,0 +1,22 @@
+<div class="list-messages">
+  <div *ngFor="let message of messages" class="message-container">
+    <app-text class="message" [colorBackRight]="colorBackRight" [colorFontRight]="colorFontRight"
+    [colorBackLeft]="colorBackLeft" [colorFontLeft]="colorFontLeft" [owner]="message.userOwner" [text]="message.text"
+    [ngClass]="{'left-message': !message.userOwner, 'right-message': message.userOwner}"></app-text>
+    <div *ngIf ="message.visible" class="order">
+      <div class="order-div">
+        <div *ngFor="let list of lists; let i = index; first as isfirst; last as islast;" [class.first]="isfirst" class="orderlist order-message  left-content">
+          <input type="checkbox" class="checkbox" [(ngModel)]="checked[i]" [class]="'checkbox'+(i+1)" [id]="'checkbox'+(i+1)" [name]="'checkbox'+(i+1)">
+          <p [class]="'checkboxtext'+(i+1)" [id]="'checkboxtext'+(i+1)" class="checkboxtext">{{list}}</p>
+        </div>
+        <div class="orderbutton">
+          <button (click)="order()">order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="input-message form-group">
+  <textarea class="input-text-message form-input" [(ngModel)]="textInput" [disabled]="disabled" placeholder="Type text here" (keyup)="onKey($event)"></textarea>
+  <img class="input-send" aria-hidden="true" src="assets/sendicon.png" (click)="sendMessage()">
+</div> 
