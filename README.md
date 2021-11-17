@@ -11,11 +11,7 @@ data)". <br />
 
 
 //Google Application credentials <br />
-1)I have sent the google APIkey to these emails  <br />
--dick-wye_ban@keysight.com <br />
--radu.muschevici@nottingham.edu.my <br />
--puchuan.hsian@nottingham.edu.my <br />
--nottacode.iem@gmail.com <br />
+1)I have sent the google APIkey to the emails of the judges and the competition official email address  <br />
 2)Kindly download the file and move it in to the folder. <br />
 3)Update the APIKey variable path string to the current APIkey.json path. <br />
 
