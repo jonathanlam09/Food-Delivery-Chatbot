@@ -11,7 +11,7 @@ data)". <br />
 
 
 //Google Application credentials <br />
-1)I have sent the google APIkey to the emails of the judges and the competition official email address  <br />
-2)Kindly download the file and move it in to the folder. <br />
-3)Update the APIKey variable path string to the current APIkey.json path. <br />
+1) I have sent the google APIkey to the emails of the judges and the competition official email address  <br />
+2) Kindly download the file and move it in to the folder. <br />
+3) Update the APIKey variable path string to the current APIkey.json path. <br />
 
