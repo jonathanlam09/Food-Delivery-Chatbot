@@ -1,0 +1,10 @@
+<div class="toppart">
+    <textarea class="text" id="text" [(ngModel)] = "textInput" (keyup)="enter($event)"></textarea>
+    <Button class="sendbutton" id="sendbtn" (click)="send()">send</Button>
+</div>
+<div class="container">
+    <div *ngFor = "let socket of sockets">
+        <!-- {{socket.name}} -->
+        <p class="socket">{{socket}}</p>
+    </div>
+</div>
